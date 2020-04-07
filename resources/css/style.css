@@ -1,0 +1,342 @@
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+/*normalize.css*/
+@import "../../vendors/css/normalize.css";
+/*--------------------------------------------*/
+/* BASIC SETUP */
+/*--------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Lato', Arial, sans-serif;
+    color: #555555;
+    font-weight: 400;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+h1{
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 160%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+h2{
+    font-size: 100%;
+    word-spacing: 2px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+h2:after{
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #336ca6;
+    width: 100px;
+    margin: 20px auto 0;
+}
+/*--------------------------------------------*/
+/* utils */
+/*--------------------------------------------*/
+.m_b_26 {
+    margin-bottom: 26px;
+}
+
+.m_b_18 {
+    margin-bottom: 18px;
+}
+.m_l_26{
+    margin-left: 26px;
+}
+/*--------------------------------------------*/
+/*========== index.php ======================== */
+/*--------------------------------------------*/
+/*-------------[ login ]-------------*/
+.limiter_login {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container_login {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    background: #ebeeef;
+}
+
+.wrap_login {
+    width: 670px;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+/*===========[ Title login ]============*/
+.login_title {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("img/bg-01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 70px 15px 74px 15px;
+}
+
+.login_title_text {
+    font-size: 150%;
+    color: #ffffff;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.login_title_text::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(54, 84, 99, 0.7);
+}
+
+/*===========[  login form ]============*/
+
+.login_form,
+.form_DemmandeRapport{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 43px 88px 93px 190px;
+
+}
+
+.wrap_input {
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #b2b2b2;
+}
+
+.label_input {
+
+    font-size: 90%;
+    color: #808080;
+    line-height: 1.2;
+    text-align: right;
+    position: absolute;
+    top: 14px;
+    left: -105px;
+    width: 80px;
+}
+
+input.input_field {
+    height: 45px;
+    outline: none;
+    border: none;
+}
+
+.input_field {
+    font-family: 'Lato', sans-serif;
+    height: 45px;
+    font-size: 80%;
+    font-weight: 300;
+    color: #555555;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    background: transparent;
+    padding: 0 5px;
+}
+
+.focus_input {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.focus_input::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 1px;
+    transition: all 0.6s;
+    background: #57b846;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+.input_field:focus + .focus_input::before{
+    width: 100%;
+}
+/*===========[  login button ]============*/
+button {
+    outline: none !important;
+    border: none;
+    background: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.wrap_form_btn,
+.wrap_form_btn_DemmandeRap{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    min-width: 160px;
+    height: 50px;
+    background-color: #57b846;
+    border-radius: 25px;
+    font-size: 80%;
+    color: #ffffff;
+    line-height: 1.2;
+    transition: all 0.4s;
+}
+
+.form_btn:hover {
+    background-color: #333333;
+}
+/*--------------------------------------------*/
+/*========== Acceuil.php======================== */
+/*--------------------------------------------*/
+.container_header{
+    margin: 0 auto;
+    padding: 10px;
+    background: rgba(0,0,0,0.01);
+    text-align: center;
+}
+.container_header img{
+    border-radius: 25px;
+}
+.container_content {
+    display: flex;
+    justify-content: start;
+
+}
+
+.container_nav_panel{
+    padding-top: 10px;
+    width: 220px;
+
+}
+.nav_panel a{
+    font-size: 80%;
+    display: block;
+    overflow: hidden;
+    margin: 0.5em 0.5em 0.5em 1.9em;
+    padding: 1em 1.1em;
+    width: 180px;
+    outline: none;
+    color: #fff;
+    background: #336ca6;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 300;
+}
+.nav_panel a:hover{
+    opacity: 0.6;
+}
+.content{
+    padding-top: 1em;
+    margin-left: 50px;
+    font-size: 100%;
+}
+/*=========footer =================*/
+.container_footer{
+    position: fixed;
+    background: rgba(0,0,0,0.01);
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+    clear: both;
+}
+.container_footer p{
+    text-align: center;
+    font-size: 70%;
+    font-weight: 300;
+}
+/*--------------------------------------------*/
+/*========== DemmanderRapport.php ======================== */
+/*--------------------------------------------*/
+.form_DemmandeRapport{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 88px 93px 190px;
+
+}
+.wrap_input_DemmandeRap {
+    width: 100%;
+    position: relative;
+}
+
+.textArea_DemRap{
+    font-family: 'Lato', sans-serif;
+    height: 120px;
+    font-size: 80%;
+    font-weight: 400;
+    color: #555555;
+    line-height: 1.2;
+    display: block;
+    width: 120%;
+
+}
+.label_input_DemRap{
+    font-size: 90%;
+    color: #808080;
+    line-height: 1.2;
+    text-align: right;
+    position: absolute;
+    left: -105px;
+    width: 80px;
+}
+.select_DemRap{
+    font-size: 90%;
+    font-weight: 300;
+}
+
+
+
