@@ -68,16 +68,15 @@
         </form>
         <?php
         if (isset($_POST['submit'])) {
+            $_SESSION['titreRapport'] = $_POST['titreRapp'];
+
         if ($_SESSION['NomTypeUser'] == 'Directeur' or $_SESSION['NomTypeUser'] == 'Directeur ventes'){
-                $_SESSION['titreRapport'] = $_POST['titreRapp'];
                 $_SESSION['typeRapport'] = $_POST['typeRapp'];
                 header('location:ChoixIndicateurs.php');
         }elseif ($_SESSION['NomTypeUser'] == 'Employé finance'){
-            $_SESSION['titreRapport'] = $_POST['titreRapp'];
             $_SESSION['typeRapport'] = "Financier";
             header('location:ChoixIndicateurs.php');
         }else{
-            $_SESSION['titreRapport'] = $_POST['titreRapp'];
             $_SESSION['typeRapport'] = "Marketing";
             header('location:ChoixIndicateurs.php');
         }

@@ -112,7 +112,6 @@
                             } elseif (($_SESSION['NomTypeUser'] == 'Directeur ventes')) {
                                 echo('<button type="submit" class="form_btn m_l_26" name="submit" value="Ajouter Synthèse">Ajouter Synthèse</button>');
                             } else {
-                                echo('<button type="submit" class="form_btn m_l_26" name="submit" value="Modifier">Modifier</button>');
                                 if ($etatRaport == 'ouvert')
                                     // soumettre pour le rapport ouvert et non cloturer
                                     echo('<button type="submit" class="form_btn m_l_26" name="submit" value="Soumettre">Soumettre</button>');
@@ -173,10 +172,9 @@
                             case "Commenter":
                                 header('location:CommenterRapport.php');
                                 break;
+                            // ---------------Ajouter Synthèse---------------
                             case "Ajouter Synthèse":
                                 header('location:AjouterSyntheseRapp.php');
-                                break;
-                            case "Modifier":
                                 break;
                         }
 
