@@ -1,4 +1,4 @@
-# Projet-SocieteLagardereActive
+## Projet Societe Lagardere Active
 Développement d'un site web dynamique intranet permettant l’édition et la validation des rapports d’analyses marketing et financiers
 
 ### Avant de lancer le site vous devez :
