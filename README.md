@@ -1,6 +1,6 @@
 ## Projet Societe Lagardere Active
 Développement d'un site web dynamique intranet permettant l’édition et la validation des rapports d’analyses marketing et financiers
-
+![demo_lagardere](https://user-images.githubusercontent.com/37422000/81479280-94ba4480-9222-11ea-8110-649dfec69273.gif)
 ### Avant de lancer le site vous devez :
 
 **1.** Créer l’entrepôt de données sous SQL server en utilisant le fichier
@@ -27,5 +27,5 @@ dans la page « ressources /PHP /FonctionsUtils.php »
 |Employé finance   | EF       | 456      |
 |Employé marketing | EM       | 789      |
 
-### La démo:
-![demo_lagardere](https://user-images.githubusercontent.com/37422000/81479280-94ba4480-9222-11ea-8110-649dfec69273.gif)
+
+
