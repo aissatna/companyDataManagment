@@ -18,7 +18,7 @@ function mysqlConnectDB()
         }
     }
 
-//Fonction pour la connexion a l'entrepôt de données
+//Fonction pour la connexion a l'entrepôt de données sous sql server
 function sqlServerConnectDB()
 {
     $serverName = "DESKTOP-C8RQSP8";
