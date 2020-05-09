@@ -21,6 +21,7 @@ dans la page « ressources /PHP /FonctionsUtils.php »
 ### Les identifiants des utilisateurs :
 
 | Poste            | Username | Password |
+| -------------    |:--------:| --------:|
 |Directeur         |D         |  000     |
 | Directeur ventes |DV        |  123     |
 |Employé finance   | EF       | 456      |
