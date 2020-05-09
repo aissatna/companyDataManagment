@@ -28,4 +28,4 @@ dans la page « ressources /PHP /FonctionsUtils.php »
 |Employé marketing | EM       | 789      |
 
 ### La démo:
-Télécharger le fichier video_demo_lagardere.mp4
+![demo_lagardere](https://user-images.githubusercontent.com/37422000/81479280-94ba4480-9222-11ea-8110-649dfec69273.gif)
