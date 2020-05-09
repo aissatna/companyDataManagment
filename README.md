@@ -1,5 +1,7 @@
 ## Projet Societe Lagardere Active
 Développement d'un site web dynamique intranet permettant l’édition et la validation des rapports d’analyses marketing et financiers
+
+
 ![demo_lagardere](https://user-images.githubusercontent.com/37422000/81479280-94ba4480-9222-11ea-8110-649dfec69273.gif)
 ### Avant de lancer le site vous devez :
 
